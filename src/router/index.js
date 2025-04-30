@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
-import User from "./pages/User/index.jsx";
+import User from "@/pages/User/index.jsx";
 import ErrorPage from "@/components/ErrorPage/ErrorPage.jsx";
-
+import App from "@/App.jsx";
 
 // 定义路由配置
 export const router = createBrowserRouter([
