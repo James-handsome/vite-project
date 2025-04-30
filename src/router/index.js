@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
-import User from "./pages/User";
+import User from "./pages/User/index.jsx";
+import ErrorPage from "@/components/ErrorPage/ErrorPage.jsx";
 
 
 // 定义路由配置
@@ -10,7 +11,7 @@ export const router = createBrowserRouter([
     errorElement: <ErrorPage />, // 全局错误页
     children: [
       {
-        path: "user/:id",     // 动态路由参数
+        path: "user",     // 动态路由参数
         element: <User />,
       },
     ],

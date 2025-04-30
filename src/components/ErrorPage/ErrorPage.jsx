@@ -1,6 +1,7 @@
 import React from "react";
 import { useRouteError } from "react-router-dom";
 import PropTypes from "prop-types";
+import "./ErrorPage.module.scss";
 
 const ErrorPage = ({
   defaultMessage = "Sorry, an unexpected error has occurred.",
