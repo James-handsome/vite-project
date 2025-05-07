@@ -1,22 +1,11 @@
 import React, { useEffect } from "react";
 import styles from "./index.module.scss";
 
-import { generateRandomString } from '@/utils/pkce-ulils';
-
-const validateCodeVerifier = (verifier) => {
-  return /^[A-Za-z0-9-._~]{43,128}$/.test(verifier);
-};
 
 const User = () => {
-  useEffect(() => {
-    
-    const apiUrl = import.meta.env.VITE_APP_AUTH_URL;
-
-    console.log(apiUrl);
-    
-    const codeVerifier = generateRandomString(64);
-    console.log(codeVerifier);
- 
+  useEffect(() => { 
+    // 这里可以放一些初始化的代码，比如获取用户信息等
+    console.log("User component mounted");
   }, []);
 
   return (
